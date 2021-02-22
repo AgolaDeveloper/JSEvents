@@ -1,0 +1,48 @@
+body{
+    background-color: ivory;
+}
+
+h1{
+    text-align: center;
+    /*color: purple;*/
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    width: 90%;
+    
+
+    margin:auto;
+
+    grid-template: 
+    "o o o" 10%
+    "t th f" 1fr
+    "t th f" 1fr
+    /1fr 1fr 1fr;
+
+    grid-gap: 3px;
+    /*background-color: gainsboro;*/
+
+}
+
+.grid-area{
+    padding-inline: 5px;
+    
+}
+
+.item1{
+    grid-area: o;
+}
+
+.item2{
+    grid-area: t;
+}
+
+.item3{
+    grid-area: th;
+}
+
+.item4{
+    grid-area: f;
+}
