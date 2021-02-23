@@ -101,29 +101,31 @@ function fun1(){
 
 //CREATING AN ARRAY OF STRING VALUES
 
-//var arr= ['mouseover','mouseout','mouseenter','mouseleave','mousemove','click','input','change','focus','blur','serach'];
+var arr= ['mouseover','mouseout','mouseenter','mouseleave','mousemove','click','input','change','focus','blur','serach'];
 
-//function filtArray(){
-    //for(let i=0;i<arr.length;i++){
-   //var arr1= arr[i].split();
-   // if (arr1[0]=== 'm')
+function filtArray(num){
+    for(let i=0;i<arr.length;i++){
+    var arr1= arr[i].split();
+    num=arr1[0];
 
-        
     //return arr[i].join();
         
-   // }
-//}
+    }
+    return(num==='m');
 
-var arr= [1,3,7,8,9,40,34,23,23,12,3,4];
+}
 
-function filtArray(){
-    for(let i=0;i<arr.length;i++){
+//var arr= [1,3,7,8,9,40,34,23,23,12,3,4];
+
+//function filtArray(num){
+  //  return(num>=20)
+    //for(let i=0;i<arr.length;i++){
       //  if(arr[i]>=10)  
 
-        return arr[i];
+       // return arr[i];
         
-    }
-}
+    //}
+//}
 
 document.getElementById("btmouse").addEventListener("click",funcM);
 function funcM(){
@@ -131,7 +133,41 @@ function funcM(){
 }
 //document.getElementById("btmouse").inick",)
 
+//practicing the sort() method
+var ar= [1,3,7,8,9,40,34,23,23,12,3,4];
+document.getElementById("psot").innerHTML= ar;
+
+        //ascending order
+ document.getElementById("fb").addEventListener("click", small);
+document.getElementById("fs").addEventListener("click", big);
+
+document.getElementById("b").addEventListener("click", large);
+document.getElementById("s").addEventListener("click", little);
+
+ function small(){
+    var fbst= document.getElementById("fbs");
+    fbst.innerHTML= "SORTED IN ASCENDING ORDER "+ ar.sort(function(a,b){return a-b;})
+ }
+ function big(){
+    var fbst1= document.getElementById("fsb");
+    fbst1.innerHTML= "SORTED IN DESCENDING ORDER "+ ar.sort(function (a,b){return b-a;})
+ }
 
 
+function large(){
+   ar.sort(function (a,b){return b-a;})
 
+    document.getElementById("b").innerHTML= ar[0] +" is the largest numbbere here";
+    document.getElementById("b").style.color= "green";
+
+}
+
+function little(){
+    ar.sort(function (a,b){return a-b;})
+ 
+     document.getElementById("s").innerHTML= "the smallest digit is " +ar[0];
+     document.getElementById("s").style.color= "red";
+ }
+//giving div of class ndiv a unique backgroundColor within the parent div
+//document.getElementByClassName("ndiv").style.backgroundColor="gray";
 
