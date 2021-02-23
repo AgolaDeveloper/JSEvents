@@ -35,6 +35,7 @@ h1{
 
 .item1{
     grid-area: o;
+    background-color: aquamarine;
 }
 
 .item2{
