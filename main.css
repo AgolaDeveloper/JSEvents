@@ -39,6 +39,7 @@ h1{
 
 .item2{
     grid-area: t;
+    overflow: auto;
 }
 
 .item3{

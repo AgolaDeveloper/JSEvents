@@ -99,3 +99,39 @@ function fun1(){
 
 
 
+//CREATING AN ARRAY OF STRING VALUES
+
+//var arr= ['mouseover','mouseout','mouseenter','mouseleave','mousemove','click','input','change','focus','blur','serach'];
+
+//function filtArray(){
+    //for(let i=0;i<arr.length;i++){
+   //var arr1= arr[i].split();
+   // if (arr1[0]=== 'm')
+
+        
+    //return arr[i].join();
+        
+   // }
+//}
+
+var arr= [1,3,7,8,9,40,34,23,23,12,3,4];
+
+function filtArray(){
+    for(let i=0;i<arr.length;i++){
+      //  if(arr[i]>=10)  
+
+        return arr[i];
+        
+    }
+}
+
+document.getElementById("btmouse").addEventListener("click",funcM);
+function funcM(){
+    document.getElementById("pmouse").innerHTML= arr.filter(filtArray);
+}
+//document.getElementById("btmouse").inick",)
+
+
+
+
+
